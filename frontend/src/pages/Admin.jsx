@@ -20,7 +20,7 @@ function Admin() {
   useEffect(() => {
     fetchBookings();
     fetchServices();
-  }, []);
+  }, [fetchBookings, fetchServices]);
 
   const fetchBookings = async () => {
     try {

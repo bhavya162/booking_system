@@ -18,7 +18,7 @@ import API from "./index";
      throw new Error("You must be logged in to book an appointment");
   }
 
-  const response = await axios.post(
+ // const response = await axios.post(
     "http://localhost:5000/api/appointments", 
     appointmentData, 
     {

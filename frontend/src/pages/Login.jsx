@@ -3,7 +3,7 @@ import { useNavigate, Link } from "react-router-dom";
 import API from "../api/index";
 import "./login.css";
 import Navbar from "../components/Navbar";
-import NavbarAdm from "../components/NavbarAdmn";
+//import NavbarAdm from "../components/NavbarAdmn";
 function Login() {
   const navigate = useNavigate();
 
@@ -11,7 +11,7 @@ function Login() {
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
   const [loading, setLoading] = useState(false);
-  const [role,setRole] = useState(null);
+  const [role,setRole] = useState("");
 
   const handleLogin = async () => {
     if (!email || !password) {
