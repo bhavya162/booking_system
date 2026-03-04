@@ -3,7 +3,7 @@ import { useNavigate, Link } from "react-router-dom";
 import API from "../api/index";
 import "./login.css";
 import Navbar from "../components/Navbar";
-//import NavbarAdm from "../components/NavbarAdmn";
+
 function Login() {
   const navigate = useNavigate();
 
@@ -43,15 +43,6 @@ function Login() {
     }
   };
 
-  /*const showNavbar = async () => {
-  const res = await API.post('/user/login', { email, password });
-
-  if (res.data && res.data.token) {
-    localStorage.setItem('token', res.data.token);
-    localStorage.setItem('role', res.data.role);
-    setRole(res.data.role);  // 👈 this triggers re-render
-  }
-};*/
   return (
     <>
      
@@ -100,3 +91,12 @@ function Login() {
 }
 
 export default Login;
+    /*const showNavbar = async () => {
+    const res = await API.post('/user/login', { email, password });
+  
+    if (res.data && res.data.token) {
+      localStorage.setItem('token', res.data.token);
+      localStorage.setItem('role', res.data.role);
+      setRole(res.data.role);  // 👈 this triggers re-render
+    }
+  };*/
