@@ -1,12 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
+//import React from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
-import { useEffect, useState } from "react";
 
 //const role = localStorage.getItem("role"); 
 
 const Navbar = () => {
-  const [role, setRole] = useState(localStorage.getItem("role"));
+  //const [role, setRole] = useState(localStorage.getItem("role"));
+  const role = localStorage.getItem("role");
   return (
     <div className="Nav">
       <div className="nav-inner">

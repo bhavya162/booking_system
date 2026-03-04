@@ -35,7 +35,8 @@ function Signup() {
     try {
       setLoading(true);
 
-      const response = await signupUser({
+      //const response = 
+      await signupUser({
         username,
         email,
         password,

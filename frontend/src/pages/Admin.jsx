@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import API from "../api";
 import "./Admin.css";
 import Navbar from "../components/Navbar";
-import axios from "axios";
 
 
 function Admin() {
@@ -19,27 +18,10 @@ function Admin() {
   const token = localStorage.getItem("token");
 
   useEffect(() => {
-  const fetchBookings = async () => {
-    try {
-      const res = await axios.get("YOUR_URL")
-      setBookings(res.data)
-    } catch (err) {
-      console.error(err)
-    }
-  }
+    fetchBookings();
+    fetchServices();
+  }, [fetchBookings, fetchServices]);
 
-  const fetchServices = async () => {
-    try {
-      const res = await axios.get("YOUR_URL")
-      setServices(res.data)
-    } catch (err) {
-      console.error(err)
-    }
-  }
-
-  fetchBookings()
-  fetchServices()
-}, [])
   const fetchBookings = async () => {
     try {
       const res = await API.get("/admin/bookings", {
