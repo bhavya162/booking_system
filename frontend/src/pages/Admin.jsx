@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import API from "../api";
 import "./Admin.css";
 import Navbar from "../components/Navbar";
+import axios from "axios";
 
 
 function Admin() {
