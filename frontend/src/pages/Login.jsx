@@ -43,7 +43,7 @@ function Login() {
     }
   };
 
-  const showNavbar = async () => {
+  /*const showNavbar = async () => {
   const res = await API.post('/user/login', { email, password });
 
   if (res.data && res.data.token) {
@@ -51,7 +51,7 @@ function Login() {
     localStorage.setItem('role', res.data.role);
     setRole(res.data.role);  // 👈 this triggers re-render
   }
-};
+};*/
   return (
     <>
      
