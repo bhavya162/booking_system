@@ -1,0 +1,86 @@
+/* Bookhistory.css */
+
+.history-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    min-height: 70vh; /* Keeps footer at the bottom */
+}
+
+.history-container h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.no-bookings {
+    text-align: center;
+    font-style: italic;
+    color: #7f8c8d;
+    margin-top: 50px;
+}
+
+/* Individual Booking Card */
+.booking-card {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.2s ease;
+    border-left: 6px solid #27ae60; /* Green theme for your veg services */
+}
+
+.booking-card:hover {
+    transform: translateY(-3px);
+}
+
+.booking-info p {
+    margin: 5px 0;
+    color: #34495e;
+}
+
+.booking-info strong {
+    color: #2c3e50;
+    font-size: 1.1rem;
+}
+
+/* Status Badge */
+.status-badge {
+    padding: 6px 15px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.status-pending {
+    background-color: #fef9e7;
+    color: #f1c40f;
+}
+
+.status-booked {
+    background-color: #eafaf1;
+    color: #27ae60;
+}
+
+.status-cancelled {
+    background-color: #fdedec;
+    color: #e74c3c;
+}
+
+/* Responsive for Mobile */
+@media (max-width: 600px) {
+    .booking-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .status-badge {
+        margin-top: 15px;
+    }
+}

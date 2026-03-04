@@ -1,0 +1,98 @@
+.about {
+  font-family: "Poppins", sans-serif;
+}
+
+/* HERO */
+.about-hero {
+  background: linear-gradient(to right, #ff4d6d, #ff758f);
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.about-hero h1 {
+  font-size: 3rem;
+}
+
+.about-hero p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+/* MAIN SECTION */
+.about-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 60px 20px;
+  flex-wrap: wrap;
+}
+
+.about-image img {
+  width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.about-text {
+  max-width: 500px;
+}
+
+.about-text h2 {
+  margin-bottom: 15px;
+}
+
+.about-text p {
+  margin-bottom: 15px;
+  color: #555;
+}
+
+/* GENERAL SECTION */
+.about-section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.about-section h2 {
+  margin-bottom: 20px;
+}
+
+.about-section p {
+  max-width: 700px;
+  margin: 10px auto;
+  color: #555;
+}
+
+/* REVIEWS */
+.reviews {
+  background-color: #f9f9f9;
+}
+
+.review-card {
+  background: white;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.review-card span {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* FAQ */
+.faq {
+  background-color: #fff;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+}
+
+.faq-item h4 {
+  margin-bottom: 5px;
+}
